@@ -22,14 +22,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = 'django-insecure-y6on4&^y1+^c$5_h4eh-i2fz-c6jmagos9$5b!o!%8=08s#!tm'
-
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = 'django-insecure-y6on4&^y1+^c$5_h4eh-i2fz-c6jmagos9$5b!o!%8=08s#!tm'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DEBUG', "False").lower() =='true'
+DEBUG = True
 
-ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS').split(" ")
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -111,9 +109,7 @@ DATABASES = {
     }
 }
 
-database_url = os.environ.get('DATABASE_URL')
-
-DATABASES["default"] = dj_database_url.parse(database_url)
+DATABASES["default"] = dj_database_url.parse("postgres://dbtest1_kvmd_user:WVX1B5hxay8TApcXFpcDh3faAVK75cFA@dpg-cku7heramefc73dahh10-a.oregon-postgres.render.com/dbtest1_kvmd")
 # postgres://dbtest1_kvmd_user:WVX1B5hxay8TApcXFpcDh3faAVK75cFA@dpg-cku7heramefc73dahh10-a.oregon-postgres.render.com/dbtest1_kvmd
 
 
