@@ -1,3 +1,4 @@
 dj_database_url==2.1.0
 Django==3.2.20
 djangorestframework==3.14.0
+gunicorn==21.2.0
