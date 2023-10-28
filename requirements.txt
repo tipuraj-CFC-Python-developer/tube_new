@@ -1,5 +1,5 @@
 absl-py==1.4.0
-accelerate==0.21.0
+accelerate==0.20.3
 aiobotocore @ file:///C:/b/abs_74o47svlua/croot/aiobotocore_1680004300264/work
 aiofiles==23.2.1
 aiohttp==3.8.5
@@ -370,6 +370,7 @@ phonemizer==3.2.1
 phonetics==1.0.5
 pickleshare==0.7.5
 Pillow==9.5.0
+pip==23.3.1
 pipreqs==0.4.13
 pipx==1.2.0
 pkginfo @ file:///C:/b/abs_d18srtr68x/croot/pkginfo_1679431192239/work
